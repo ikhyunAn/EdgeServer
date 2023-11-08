@@ -23,5 +23,4 @@ set(SOURCES
 add_executable(${PROJECT_NAME} ${SOURCES})
 
 find_package(Boost REQUIRED system thread)
-find_package(fmt CONFIG REQUIRED)
 target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})
